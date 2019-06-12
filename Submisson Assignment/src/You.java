@@ -27,4 +27,25 @@ public class You{
 
 	// Write your code here
 	
+	public You() {
+		firstName = "Michael";
+		lastName = "Sikaras";
+		favoriteAnimal = "Dog";
+		age = 16;
+	}
+	
+	public String getFullName() {
+		return firstName + " " + lastName;
+	}
+	
+	public String setFavoriteAnimal(String animal) {
+		favoriteAnimal = animal;
+		return favoriteAnimal;
+	}
+	
+	public int happyBirthday() {
+		System.out.println("Happy Birthday!");
+		age++;
+		return age;
+	}
 }
